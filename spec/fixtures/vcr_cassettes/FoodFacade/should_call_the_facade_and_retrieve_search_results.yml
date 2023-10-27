@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 Oct 2023 22:49:22 GMT
+      - Fri, 27 Oct 2023 22:49:34 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -33,7 +33,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '1'
+      - '2'
       Set-Cookie:
       - ApplicationGatewayAffinity=1fdae0f824bf43bf7d058765be26516f; Path=/
       - ApplicationGatewayAffinityCORS=1fdae0f824bf43bf7d058765be26516f; Path=/; SameSite=None;
@@ -46,15 +46,15 @@ http_interactions:
       Via:
       - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Api-Umbrella-Request-Id:
-      - cbed9uq7vpodpob261tg
+      - cbeda1mholjqfa6d7gp0
       X-Cache:
       - MISS
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3586'
+      - '3585'
       X-Vcap-Request-Id:
-      - d9dbde1d-4a64-4f19-41ba-1bcfd92676e7
+      - 0571d9bf-353a-4e52-6829-a60e64a40b02
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -3834,5 +3834,5 @@ http_interactions:
         made to foods, including moisture changes","id":1002,"foodAttributes":[{"value":"Moisture
         change: 0%","id":2666943}]}],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":55556,"SR
         Legacy":601,"Survey (FNDDS)":494,"Foundation":9,"Experimental":3},"nutrients":{}}}'
-  recorded_at: Fri, 27 Oct 2023 22:49:22 GMT
+  recorded_at: Fri, 27 Oct 2023 22:49:34 GMT
 recorded_with: VCR 6.2.0

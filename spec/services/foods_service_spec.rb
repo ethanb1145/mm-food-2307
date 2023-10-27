@@ -11,6 +11,12 @@ RSpec.describe FoodsService do
 
         search = FoodsService.new.food_search("sweet potatoes")
         expect(search).to be_a Hash
+        food_data = search[:foods]
+
+        expect(food_data.first).to have_key(:description)
+        expect(food_data.first).to have_key(:gtinUpc)
+        expect(food_data.first).to have_key(:brandOwner)
+        expect(food_data.first).to have_key(:ingredients)
       end
     end
   end
