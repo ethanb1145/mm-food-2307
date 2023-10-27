@@ -1,0 +1,11 @@
+<h1> Total Results: <%= @total_hits %> </h1>
+<% @foods.first(10).each do |food| %>
+  <div class="food-item">
+    <ul>
+      <li><strong>Description:</strong> <%= food.description %></li>
+      <li><strong>GTIN:</strong> <%= food.id %></li>
+      <li><strong>Brand:</strong> <%= food.brand %></li>
+      <li><strong>Ingredients:</strong> <%= food.ingredients %></li>
+    </ul>
+  </div>
+<% end %>

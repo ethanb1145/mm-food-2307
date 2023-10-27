@@ -1,6 +1,8 @@
 class FoodsService
   def conn 
-    Faraday.new(url: "https://api.nal.usda.gov")
+    Faraday.new(url: "https://api.nal.usda.gov") do |faraday|
+      faraday.headers["X-Api-Key"] = Rails.application.credentials.food[:key]
+    end
   end
 
   def get_url(url)
@@ -9,6 +11,11 @@ class FoodsService
   end
 
   def food_search(query)
-    get_url("/fdc/v1/foods/search?api_key=#{Rails.application.credentials.food[:key]}&query=#{query}")
+    get_url("/fdc/v1/foods/search?query=#{query}")
+  end
+
+  def total_hits(query)
+    response = food_search(query)
+    response[:totalHits]
   end
 end
